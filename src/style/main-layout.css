@@ -1,0 +1,11 @@
+.main-content {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: var(--main-content-height);
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+
+  .main-content__display {
+    padding: 20px;
+  }
+}

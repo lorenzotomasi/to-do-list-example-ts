@@ -1,0 +1,61 @@
+.to-do-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 15px;
+  border: 1px solid var(--background-color-light);
+  border-radius: var(--border-radius);
+  gap: var(--gap);
+  max-width: var(--card-max-width );
+
+  .to-do-card__display-name {
+    margin: 0;
+  }
+
+  .to-do-card__button {
+    align-self: flex-end;
+  }
+  
+  @media screen  and (max-width: 600px) {
+    .to-do-card__button {
+      align-self: normal;
+    }
+  }
+
+  .to-do-card__id {
+    color: var(--primary);
+    position: absolute;
+    background-color: var(--background-color-mid);
+    border: 1px solid transparent;
+    padding: 2px;
+    border-radius: 50%;
+    top: 0;
+    margin: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.to-do-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 2);
+  padding: 16px;
+  border: 1px solid var(--background-color-light);
+  border-radius: var(--border-radius);
+  overflow-y: auto;
+  height: calc(calc(var(--main-content-height) * 90) / 100);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.to-do-card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.to-do-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  gap: var(--gap);
+}

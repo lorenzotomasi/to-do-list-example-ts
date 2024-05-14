@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  color: var(--white);
+  padding: 4px 8px;
+  border: none;
+}
+
+.button.button--primary {
+  background-color: var(--button-primary-color);
+}
+
+.button.button--secondary {
+  background-color: var(--button-secondary-color);
+}

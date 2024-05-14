@@ -1,0 +1,29 @@
+.user-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap);
+  cursor: pointer;
+  
+  img.user-info__image {
+    border-radius: var(--border-radius);
+    height: 25px;
+  }
+  
+  .user-info__dropdown {
+    color: var(--white);
+    min-width: max-content;
+    position: absolute;
+    background-color: var(--background-color-light);
+    top: 0;
+    transform: translateY(50%) translateX(-50%);
+    border: 1px solid var(--user-info-border-color);
+    border-radius: var(--border-radius);
+    padding: 8px 40px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap)* 2);
+  }
+}

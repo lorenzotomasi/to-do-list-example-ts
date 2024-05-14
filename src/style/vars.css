@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  /* Base unit */
+  --gap: 8px;
+  --text-font-size: 14px;
+  --top-bar-height: 40px;
+  --main-content-height: calc(100vh - var(--top-bar-height));
+  --border-radius: 8px;
+  --main-content-padding: 15px;
+
+  /* Base color */
+  --blue: rgb(74	121	224);
+  --black: #000;
+  --dark-gray: rgb(24	24	27);
+  --light-gray: rgb(53	53	58);
+  --white: #FFF;
+  --dark-white: #CCC;
+  --red: rgb(221	82	76);
+  --red-dark: rgb(173, 63, 59);
+  --green: rgb(119	219	137	);
+  --green-dark: rgb(98, 182, 114);
+
+  /* base color */
+  --primary: var(--blue);
+  --night-background-color: var(--black);
+  --night-background-color-mid: var(--dark-gray);
+  --night-background-color-light: var(--light-gray);
+  --night-light-text-color: var(--dark-white);
+  --night-text-color: var(--white);
+  --light-background-color: var(--white);
+  --light-background-color--mid: var(--dark-white);
+  --light-background-color--dark: var(--light-gray);
+  --light-text-color: var(--black);
+  --light-dark-text-color: var(--light-gray);
+  --to-do-task: var(--red);
+  --to-do-task-hover: var(--red-dark);
+  --completed-task: var(--green);
+  --completed-task-hover: var(--green-dark);
+
+  /* base page style */
+  --background-color: var(--night-background-color);
+  --background-color-mid: var(--night-background-color-mid);
+  --background-color-light: var(--night-background-color-light);
+  --text-color: var(--night-text-color);
+  --light-text-color: var(--night-light-text-color);
+
+  /* Element day night */
+  --filter-table-background-color-night: rgb(39	39	41);
+  --filter-table-background-color-day: rgb(230	230	239);
+
+  /* elements vars */
+  --card-max-width: calc(100vw / 6);
+  
+  --button-primary-color: rgb(54	97	227);
+  --button-secondary-color: rgb(82	82	91);
+
+  --table-primary-color: rgb(54	97	227);
+  --filter-table-background-color: var(--filter-table-background-color-night);
+  --sorting-button-background-color: var(--table-primary-color);
+  --table-max-width: none;
+
+  --user-info-border-color: rgb(51	51	51)
+}
+
+/* Mobile */
+@media screen  and (max-width: 600px) {
+  :root {
+    --card-max-width: calc(100vw / 2);
+    --table-max-width: calc(100vw - calc(var(--main-content-padding) * 2));
+  }
+}

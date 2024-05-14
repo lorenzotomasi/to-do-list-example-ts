@@ -1,0 +1,34 @@
+.status-button {
+  width: 100%;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  color: var(--white);
+  padding: 4px 8px;
+}
+
+.status-button.status-button--completed {
+  background-color: var(--completed-task);
+  border: 1px solid var(--completed-task);
+}
+.status-button.status-button--to-do {
+  background-color: var(--to-do-task);
+  border: 1px solid var(--to-do-task);
+}
+
+.status-button.status-button--completed.status-button--only-icon {
+  color: var(--black);
+}
+
+.status-button.status-button--to-do.status-button--only-icon {
+  color: var(--white);
+}
+.status-button.status-button--completed:hover {
+  background-color: var(--completed-task-hover);
+  border-color: var(--completed-task-hover);
+}
+
+.status-button.status-button--to-do:hover {
+  background-color: var(--to-do-task-hover);
+  border-color: var(--to-do-task-hover);
+}
