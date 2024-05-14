@@ -13,6 +13,7 @@
   }
   
   .user-info__dropdown {
+    z-index: 1000;
     color: var(--white);
     min-width: max-content;
     position: absolute;

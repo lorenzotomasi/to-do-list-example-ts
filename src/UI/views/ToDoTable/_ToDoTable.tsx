@@ -19,6 +19,7 @@ const _ToDoTable = (props: Props) => {
   function renderRow(toDo: ToDo, index: number) {
     return (
       <tr key={`${index}---${toDo.id}`}>
+        <td></td>
         <td className={baseClasses.table.minWithSmall}>
           <Text text={String(toDo.id)} />
         </td>
@@ -37,6 +38,7 @@ const _ToDoTable = (props: Props) => {
     return (
       <thead>
         <tr>
+          <th></th>
           <th className={baseClasses.table.minWithSmall}>
             <_SortingButton
               slugToSort={"id"}
